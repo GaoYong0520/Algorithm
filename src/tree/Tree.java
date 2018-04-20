@@ -21,6 +21,15 @@ public class Tree {
         root.children.get(1).children.add(n5);
         root.children.get(1).children.get(0).children.add(n6);
     }
+
+    /**
+     * M叉树按层次遍历，输出每一层节点和的最大值。
+     * 注意：
+     * first=second;
+     * second.clear();引用类型，first=second=null
+     * @param root 树根
+     * @return 最大值
+     */
     public static int  getMaxValue(Node root) {
         int maxValue = root.value;
         ArrayDeque<Node> first = new ArrayDeque<>();
