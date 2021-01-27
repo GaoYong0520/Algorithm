@@ -1,4 +1,4 @@
-package common.datastructure;
+package common.datastructure.list;
 
 /**
  * @author 高勇01
